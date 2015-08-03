@@ -1,0 +1,45 @@
+<div class="ui segments">
+    <div class="ui segment">
+    <div class="ui top fixed menu">
+         <div class="item">
+        <img src="assets/images/stmarg.gif">
+         </div>
+        <a class="item" href="#/welcome"> <h3> SmartsMedia </h3></a>
+        <a class="item" href="#/cvcpolling"> Chairman & Vice-Chairman Voting</a>
+        <a class="item" href="#/tlpolling">  Team Leaders Voting </a>
+    </div>
+    </div>
+
+
+<!--Title-->
+<h1> Chairman & Vice-Chairman Voting 2015 </h1>
+
+<!--Terms & Conditions-->
+ <p>
+ <b>ROLE OF CHAIRMAN & VICE CHAIRMAN:</b><br>
+    1. Helping teachers <br>
+    2. Overlook the job of the team members <br>
+    3. Delegate work to team leaders <br>
+    4. Manage and solve any problem the CCA encounters <br>
+ </p>
+
+<div class="col-xs-4">
+<h4>Select your ideal Chairman candidate </h4>
+
+<select class="form-control" ng-options="member.username for member in sec3s" ng-model="choice.chair_choice">
+
+</select>
+<h3>Reason</h3>
+<textarea ng-model="choice.chair_reason"></textarea>
+</div>
+<br>
+<div class="col-xs-4">
+<h4>Select your ideal Vice-Chairman candidate </h4>
+
+<select class="form-control" ng-options="member.username for member in sec3s" ng-model="choice.vchair_choice">
+
+</select>
+<textarea ng-model="choice.vchair_reason"></textarea>
+</div>
+<!--Return & Proceed Buttons-->
+<button class="large ui green basic button" ng-click="submit_cvc()">Submit</button>
